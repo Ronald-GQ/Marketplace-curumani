@@ -29,7 +29,7 @@ def contactar_whatsapp(request, producto_id):
     if not telefono.startswith("57"):
         telefono = f"57{telefono}"
 
-    mensaje = f"Hola {producto.productor.nombre}, estoy interesado en tu producto '{producto.nombre}' publicado en la plataforma de comercio rural de Guaimaral."
+    mensaje = f"Hola {producto.productor.nombre}, estoy interesado en tu producto '{producto.nombre}' publicado en la plataforma de comercio rural de curumaní."
     url_whatsapp = f"https://wa.me/{telefono}?text={mensaje.replace(' ', '%20')}"
     
     return redirect(url_whatsapp)

@@ -3,20 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mercado Rural Guaimaral - Curumaní</title>
+    <title>Mercado Rural Curumaní</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body class="bg-light">
     <nav class="navbar navbar-expand-lg navbar-dark bg-success">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="{% url 'catalogo' %}">🌱 Mercado Rural Guaimaral</a>
+            <a class="navbar-brand fw-bold" href="{% url 'catalogo' %}">🌱 Mercado Rural Curumaní</a>
+            <div class="d-flex">
+      <a href="/admin/" class="btn btn-outline-light btn-sm">
+        Panel Administrativo
+      </a>
+    </div>
         </div>
     </nav>
 
     <div class="container my-4">
         <div class="text-center mb-4">
             <h2 class="fw-bold">Comercio Directo del Campo a su Mesa</h2>
-            <p class="text-muted">Productos agrícolas, pesqueros y artesanales de la vereda Guaimaral, Curumaní, Cesar.</p>
+            <p class="text-muted">Productos agrícolas, pesqueros y artesanales de la zona rural de Curumaní, Cesar.</p>
         </div>
 
         <!-- Filtros por categoría -->
