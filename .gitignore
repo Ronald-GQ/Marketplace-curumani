@@ -1,0 +1,16 @@
+# Entorno virtual
+.venv/
+venv/
+ENV/
+
+# Python / Pyc
+__pycache__/
+*.py[cod]
+*$py.class
+db.sqlite3
+
+# Archivos de VS Code
+.vscode/
+
+# Medios locales de prueba (opcional, si prefieres no subir las imágenes de prueba)
+media/
