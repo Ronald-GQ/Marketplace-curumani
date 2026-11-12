@@ -1,7 +1,8 @@
 from django.db import models
 
 class Productor(models.Model):
-    nombre = models.CharField(max_length=100)
+    nombre = models.CharField(max_length=100, unique=True, verbose_name="Nombre de Usuario / Productor")
+    contrasena = models.CharField(max_length=100, default="123456", verbose_name="Contraseña") # Clave para acceder
     telefono = models.CharField(max_length=20)
     correo = models.EmailField(blank=True, null=True)
     vereda = models.CharField(max_length=100)
